@@ -51,6 +51,6 @@ express()
     // res.send(result)
   // })
   .listen(PORT, () => console.log(`Listening on ${PORT}`))
-  module.exports = {
-    server
-};
+//   module.exports = {
+//     server
+// };
