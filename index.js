@@ -2,7 +2,7 @@ const cool = require('cool-ascii-faces')
 const express = require('express')
 const path = require('path');
 const helmet = require('helmet');
-const cors = require('cors');
+// const cors = require('cors');
 
 const PORT = process.env.PORT || 5000
 const mongodb = require('mongodb');
@@ -30,7 +30,7 @@ const db = mongoose.connection;
 db.on('error', console.error.bind(console, 'connection error:'));
 
 server.use(helmet());
-server.unsubscribe(cors());
+// server.unsubscribe(cors());
 server.use(express.json());
 
 express()
