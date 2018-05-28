@@ -38,7 +38,7 @@ express()
   // .set('views', path.join(__dirname, 'views'))
   // .set('view engine', 'ejs')
   // .get('/', (req, res) => res.render('pages/index'))
-  .get('/test', function (req, res) {
+  .get('/', function (req, res) {
     res.status(200).json({ api: 'running' });
   })
   // .get('/cool', (req, res) => res.send(cool()))
