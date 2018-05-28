@@ -34,22 +34,22 @@ server.unsubscribe(cors());
 server.use(express.json());
 
 express()
-  .use(express.static(path.join(__dirname, 'public')))
-  .set('views', path.join(__dirname, 'views'))
-  .set('view engine', 'ejs')
-  .get('/', (req, res) => res.render('pages/index'))
+  // .use(express.static(path.join(__dirname, 'public')))
+  // .set('views', path.join(__dirname, 'views'))
+  // .set('view engine', 'ejs')
+  // .get('/', (req, res) => res.render('pages/index'))
   .get('/test', function (req, res) {
     res.status(200).json({ api: 'running' });
   })
-  .get('/cool', (req, res) => res.send(cool()))
-  .get('/times', (req, res) => {
-    let result = ''
-    const times = process.env.TIMES || 5
-    for (i = 0; i < times; i++) {
-      result += i + ' '
-    }
-    res.send(result)
-  })
+  // .get('/cool', (req, res) => res.send(cool()))
+  // .get('/times', (req, res) => {
+    // let result = ''
+    // const times = process.env.TIMES || 5
+    // for (i = 0; i < times; i++) {
+      // result += i + ' '
+    // }
+    // res.send(result)
+  // })
   .listen(PORT, () => console.log(`Listening on ${PORT}`))
   module.exports = {
     server
