@@ -6,6 +6,9 @@ const {createUser, getNote, login, createNotes,  getNoteByID, deleteUser, update
 
 module.exports = server => {
     server.get('/api/notes/view', authenticate, getNote);
+    server.get('/', (req,res) => {
+        res.json({Message: 'Hello World'})
+    })
     server.route('/api/notes/create').post(authenticate, createNotes);
     // server.get('/api/notes/get',authenticate, getNoteByID);
     server.route('/api/notes/get').post(authenticate, getNoteByID);
