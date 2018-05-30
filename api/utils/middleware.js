@@ -1,7 +1,6 @@
 const jwt = require('jsonwebtoken');
-const Note = require('./note/NoteModel');
-const mysecret = 'This is the backend project for lambda. Will have to connect it to the front-end project, from last month.'
-
+const Note = require('../models/NoteModel');
+const {mysecret} = require('../../config');
 const authenticate = (req,res,next) => {
     const token = req.get('Authorization');
     if (token) {
@@ -19,5 +18,4 @@ const authenticate = (req,res,next) => {
 
 module.exports = {
     authenticate,
-    mysecret
 };

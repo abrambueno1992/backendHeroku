@@ -1,9 +1,9 @@
-const Note = require('../note/NoteModel');
+const Note = require('../models/NoteModel');
 const bcrypt = require('bcrypt');
 
-const createNote = (req,res) => {
+const createUser = (req,res) => {
     const {username, password} = req.body;
-    const user = new User({username, password});
+    const user = new Note({username, password});
     user
         .save()
         .then(user => res.status(201).send(user))
@@ -11,5 +11,5 @@ const createNote = (req,res) => {
 };
 
 module.exports = {
-    createNote
+    createUser
 };
