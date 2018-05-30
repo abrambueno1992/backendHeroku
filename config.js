@@ -1,4 +1,6 @@
-const mysecret = 'This is the final project for the web development curriculum. Tying the frontend with the backend';
+require('dotenv').config()
+// require('dotenv').config()
+const mysecret = `${process.env.SESSION_SECRET}`;
 module.exports = {
     mysecret
 }

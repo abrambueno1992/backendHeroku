@@ -2,8 +2,10 @@ const { server } = require('./index');
 const mongoose = require('mongoose');
 const port = process.env.PORT || 5000;
 mongoose.Promise = global.Promise;
-// const uri = 'mongodb://heroku_m7f5h0h6:pk20t1sracjbphn4kiteubek8u@ds137740.mlab.com:37740/heroku_m7f5h0h6';
-const uri = `mongodb://abramapi:AbNewDatabaseTest@ds237770.mlab.com:37770/notesdb`
+require('dotenv').config();
+const dotENV = require('dotenv').config();
+const uri = `${process.env.DB_MONGOdb}`;
+
 var options = {
   "server": {
     "socketOptions": {
