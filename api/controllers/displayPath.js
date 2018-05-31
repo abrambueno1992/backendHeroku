@@ -15,7 +15,7 @@ const CreatedNotes = require('../models/NoteCreationModel');
 // };
 
 const getNote = (req, res) => {
-    console.log("LOgged in get note")
+    console.log("LOgged in get note", req.headers)
     if (req.decoded) {
         CreatedNotes.find()
             .populate('_creator')
