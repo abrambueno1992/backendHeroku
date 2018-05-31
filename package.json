@@ -28,10 +28,7 @@
     "request": "^2.81.0",
     "tape": "^4.7.0"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/heroku/node-js-getting-started"
-  },
+  "repository": "git@github.com:abrambueno1992/back-end-project-week.git",
   "keywords": [
     "node",
     "heroku",
