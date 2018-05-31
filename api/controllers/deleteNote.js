@@ -8,7 +8,7 @@ const deleteNote = (req,res) => {
     if (req.decoded) {
         CreateNotes.findByIdAndRemove(Id)
         .then(note => {
-            res.status(201).send(users)
+            res.status(201).send(note)
         })
         .catch(err => {
             res.status(500).json(err);
