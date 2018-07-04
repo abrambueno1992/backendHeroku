@@ -11,7 +11,8 @@ module.exports = server => {
     server.route('/api/notes/get').post(authenticate, getNoteByID);
     // server.route('/api/notes/view/*').post(authenticate, getNoteByID);
     // server.route('/api/notes/*').post(authenticate, getNoteByID);
-    server.get('/*', authenticate, getNote);
+    server.get('*', authenticate, getNote);
+    server.route('*').post(authenticate, getNoteByID);
     server.route('/api/notes/update').put(authenticate, updateNotes);
     server.route('/api/notes/userupdate').put(authenticate, updateUser);
     server.route('/api/notes/delete').delete(authenticate, deleteNote);
