@@ -24,7 +24,7 @@ module.exports = server => {
 
     server.route('/api/notes/login').post(login);
     server.get('/*', function(req, res) {
-        res.sendFile(path.join(__dirname, '../../', 'app.js'), function(err) {
+        res.sendFile(path.join(__dirname, '../../', 'index.js'), function(err) {
           if (err) {
             res.status(500).send(err)
           }
