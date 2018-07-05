@@ -31,9 +31,8 @@ const login = (req, res) => {
                 const payload = {
                     username: user.username
                 };
-                const expiration = {exp : Math.floor(Date.now() / 1000) + (60)} ;// 1 minute
                 Id = user._id
-                const token = jwt.sign( payload, mysecret,{ expiresIn: 1 * 1 });
+                const token = jwt.sign( payload, mysecret,{ expiresIn: 60 * 60 });
                 res.json({ token, Id, username });
             }
         });
