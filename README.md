@@ -33,7 +33,8 @@ or
 
 https://trello.com/b/aXShc131/lambda-notesbackend-abraham-bueno
 https://shielded-mountain-33568.herokuapp.com/
-https://abrambueno-lamdanotes.netlify.com/
+- Complete Application: https://abrambueno-lamdanotes.netlify.com/
+- Github for Front End Portion, which was rewired to get the endpoints of the server: https://github.com/abrambueno1992/BackEndPROJECT
 
 ## Documentation
 
