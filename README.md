@@ -28,6 +28,13 @@ or
 
 [![Deploy to Heroku](https://www.herokucdn.com/deploy/button.png)](https://heroku.com/deploy)
 
+
+## Heroku App Deployment Link, Netlify Deployment and Trello
+
+https://trello.com/b/aXShc131/lambda-notesbackend-abraham-bueno
+https://shielded-mountain-33568.herokuapp.com/
+https://abrambueno-lamdanotes.netlify.com/
+
 ## Documentation
 
 For more information about using Node.js on Heroku, see these Dev Center articles:
